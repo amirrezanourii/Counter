@@ -1,0 +1,14 @@
+<html>
+<title>
+This is the COUNTER!
+</title>
+<body> 
+<strong>Number of Refresh: </strong>
+<form action="{% url 'index' id=1 %}" method="get">
+    <p>
+        {{  mid_number }}
+    </p>    
+    <button type='submit'>add </button>
+</form>
+</body>
+</html>
