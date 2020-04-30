@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.template import loader
-import datetime
+#import datetime
 from .models import Count
 from django.views.decorators.csrf import csrf_protect
 
@@ -12,6 +12,3 @@ def index(request, id):
     num.save()
 
     return render(request, 'counter/index.html', {'mid_number': num})
-
-
-

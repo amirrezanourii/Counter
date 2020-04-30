@@ -3,12 +3,57 @@
 This is the COUNTER!
 </title>
 <body> 
-<strong>Number of Refresh: </strong>
-<form action="{% url 'index' id=1 %}" method="get">
-    <p>
+<strong>  Number of Refresh: </strong>
+<form action="{% url 'index' id=1 %}" method="get" class="myform">
+    <div class="counter-number">
         {{  mid_number }}
-    </p>    
+    </div>
+        
+       
     <button type='submit'>add </button>
 </form>
+
+<link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+
+<style type="text/css">
+    body{
+        background-color: #4b576d;
+        color: #fff;
+        font-family: 'Delius', cursive;}
+        button{
+            font-family: 'Delius', cursive;
+            background-color: #626e7f;
+            width: 200px;
+            height: 30px;
+            border: none;
+            border-radius: 3px;
+            color: #fff;
+            transition: .3s ease background-color;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: rgb(14, 200, 233);
+            transition: .3s ease background-color;
+        }
+        .counter-number{
+            text-align: center;
+            font-size: 50px;
+            border: 3px #fe645f solid;
+            width: 100px;
+            height: 100px;
+            border-radius: 60px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    
+    .myform {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+</style>
 </body>
 </html>
